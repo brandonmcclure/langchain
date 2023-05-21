@@ -1,5 +1,7 @@
 # 🦜️🔗 LangChain
 
+**This branch allows me to merge fixes and deploy the latest changes before they are merged upstream. This branch is considered very unstable**
+
 ⚡ Building applications with LLMs through composability ⚡
 
 [![lint](https://github.com/hwchase17/langchain/actions/workflows/lint.yml/badge.svg)](https://github.com/hwchase17/langchain/actions/workflows/lint.yml)
