@@ -34,6 +34,7 @@ from langchain.llms.sagemaker_endpoint import SagemakerEndpoint
 from langchain.llms.self_hosted import SelfHostedPipeline
 from langchain.llms.self_hosted_hugging_face import SelfHostedHuggingFaceLLM
 from langchain.llms.stochasticai import StochasticAI
+from langchain.llms.text_generation_webui import TextGenerationWebui
 from langchain.llms.writer import Writer
 
 __all__ = [
@@ -64,6 +65,7 @@ __all__ = [
     "Replicate",
     "SelfHostedPipeline",
     "SelfHostedHuggingFaceLLM",
+    "TextGenerationWebui",
     "PromptLayerOpenAI",
     "PromptLayerOpenAIChat",
     "StochasticAI",
@@ -104,6 +106,7 @@ type_to_cls_dict: Dict[str, Type[BaseLLM]] = {
     "self_hosted": SelfHostedPipeline,
     "self_hosted_hugging_face": SelfHostedHuggingFaceLLM,
     "stochasticai": StochasticAI,
+    "text_generation_webui": TextGenerationWebui,
     "writer": Writer,
     "rwkv": RWKV,
     "huggingface_textgen_inference": HuggingFaceTextGenInference,
