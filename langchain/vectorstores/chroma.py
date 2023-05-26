@@ -417,6 +417,8 @@ class Chroma(VectorStore):
         Returns:
             Chroma: Chroma vectorstore.
         """
+        if len(documents) == 0:
+            raise ValueError(f"Expected something in documents")
         texts = [doc.page_content for doc in documents]
         metadatas = [doc.metadata for doc in documents]
         return cls.from_texts(
