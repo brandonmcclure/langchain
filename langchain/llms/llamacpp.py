@@ -103,6 +103,9 @@ class LlamaCpp(LLM):
     streaming: bool = True
     """Whether to stream the results, token by token."""
 
+    verbose: bool = True
+    """Whether to print timings"""
+
     @root_validator()
     def validate_environment(cls, values: Dict) -> Dict:
         """Validate that llama-cpp-python library is installed."""
